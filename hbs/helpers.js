@@ -9,7 +9,6 @@ hbs.registerHelper('getYear', () => {
 hbs.registerHelper('capitalizar', (texto) => {
     let palabras = texto.split(' ');
     palabras.forEach((palabra, idx) => {
-        console.log(palabra, idx);
         palabras[idx] = palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase();
     });
 
